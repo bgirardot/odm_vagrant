@@ -13,8 +13,8 @@ How to use
 5. Make an OpenDroneMap directory c:\users\yourusername\Documents\odm\
 6. Make a directory c:\users\yourusername\Documents\odm\vagrant_data
 7. Copy your cloned 'odm_vagrant' directory to c:\users\yourusername\Documents\odm\
-8. Launch GitHub Command Line
- * Navigate to the odm_vagrant directory.:
+8. Launch GitHub Command Line (Start Menu->GitHub Inc->Git Shell)
+ * Navigate to the odm_vagrant directory:
 
  ```
  cd c:\users\yourusername\Documents\odm\odm_vagrant\
