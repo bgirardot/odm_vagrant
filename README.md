@@ -10,7 +10,7 @@ How to use
 2. Install Vagrant ( http://vagrantup.com )
 3. (For Windows and Mac) Install Github ( http://windows.github.com or http://mac.github.com )
 4. Use the github windows client to clone this odm_vagrant repository to your local machine
-5. Make an OpenDronMap directory c:\users\yourusername\Documents\odm\
+5. Make an OpenDroneMap directory c:\users\yourusername\Documents\odm\
 6. Make a directory c:\users\yourusername\Documents\odm\vagrant_data
 7. Copy your cloned 'odm_vagrant' directory to c:\users\yourusername\Documents\odm\
 8. Launch GitHub Command Line
