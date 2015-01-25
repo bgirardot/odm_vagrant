@@ -9,13 +9,15 @@ How to use
 1. Install VirtualBox ( http://virtualbox.org )
 2. Install Vagrant ( http://vagrantup.com )
 3. (For Windows and Mac) Install Github ( http://windows.github.com or http://mac.github.com )
-4. Make a directory c:\users\yourusername\Documents\odm\vagrant_data
-5. Copy 'odm_vagrant' to c:\users\yourusername\Documents\odm\
-6. Launch GitHub Command Line
- * Navigate to vagrant directory.:
+4. Use the github windows client to clone this repository to your local machine
+5. Make an OpenDronMap directory c:\users\yourusername\Documents\odm\
+6. Make a directory c:\users\yourusername\Documents\odm\vagrant_data
+7. Copy your cloned 'odm_vagrant' directory to c:\users\yourusername\Documents\odm\
+8. Launch GitHub Command Line
+ * Navigate to the odm_vagrant directory.:
 
  ```
- cd c:\users\yourusername\Documents\OpenDroneMap\
+ cd c:\users\yourusername\Documents\odm\odm_vagrant\
  ```
  * Type the following in the command line
 
