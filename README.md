@@ -9,7 +9,7 @@ How to Install and Test
 1. Install VirtualBox ( http://virtualbox.org )
 2. Install Vagrant ( http://vagrantup.com )
 3. Install Github for Windows or Mac OS ( http://windows.github.com or http://mac.github.com )
-4. Clone the odm_vagrant repository ( https://github.com/OpenDroneMap/odm_vagrant )to your local machine.
+4. Clone the odm_vagrant repository ( https://github.com/OpenDroneMap/odm_vagrant ) to your local machine.
 5. Make a main install directory for the OpenDroneMap installation c:\users\yourusername\Documents\odm\
 6. Copy your cloned 'odm_vagrant' directory to c:\users\yourusername\Documents\odm\
 7. Launch GitHub Command Line (Start Menu->GitHub Inc->Git Shell)
@@ -46,7 +46,6 @@ You have now installed, launched and logged in to an Ubuntu GNU/Linux OS on your
   cd /odm_app/OpenDroneMap/
   ./install.sh
   ```
-
 Wait patiently, on a typical desktop machine ODM App installation will take about 20 minutes.
 
 12. Run the OpenDroneMap App on the an odm_data test dataset.
@@ -55,11 +54,8 @@ Wait patiently, on a typical desktop machine ODM App installation will take abou
   cd /vagrant_data/odm_data/pacifica/
   /odm_app/OpenDroneMap/run.pl
   ```
-
 Wait patiently again, this will take about the same amount of time as the install proceedure.
-
 Outputs will be in /vagrant_data/odm_data/pacifica/reconstruction-with-image-size-1200 and /vagrant_data/odm_data/pacifica/reconstruction-with-image-size-1200-results
-
 In your Windows host, these will be at c:\users\yourusername\Documents\odm\vodm_data\odm_data\pacifica\
 
 13. If you are done processing imagery datasets, you can logout and shutdown the virutal machine.
@@ -67,7 +63,6 @@ In your Windows host, these will be at c:\users\yourusername\Documents\odm\vodm_
   ```
   sudo shutdown now
   ```
-  
 To enter the ODM environment again, repeat steps 7, 8 (but don't make the vodm_data directory a second time) Step 12 is all you need to do to run the software on another imagery dataset.
 
 ---
