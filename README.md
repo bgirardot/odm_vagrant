@@ -43,25 +43,26 @@ You have now installed, launched and logged in to an Ubuntu GNU/Linux OS on your
   ./install.sh
   ```
 
-Wait patiently, on a typical desktop machine ODM App installation will take about 20 minutes...
+Wait patiently, on a typical desktop machine ODM App installation will take about 20 minutes.
 
 12. Run the OpenDroneMap App on the an odm_data test dataset.
-```
-cd /vagrant_data/odm_data/pacifica/
-/odm_app/OpenDroneMap/run.pl
-```
+  ```
+  cd /vagrant_data/odm_data/pacifica/
+  /odm_app/OpenDroneMap/run.pl
+  ```
 
-Wait patiently again, this will take about the same amount of time as the install proceedure...
+Wait patiently again, this will take about the same amount of time as the install proceedure.
 
 Outputs will be in /vagrant_data/odm_data/pacifica/reconstruction-with-image-size-1200 and /vagrant_data/odm_data/pacifica/reconstruction-with-image-size-1200-results
 
 In your Windows host, these will be at c:\users\yourusername\Documents\odm\vodm_data\odm_data\pacifica\
 
 13. If you are done processing imagery datasets, you can logout and shutdown the virutal machine.
-```
-sudo shutdown now
-```
+  ```
+  sudo shutdown now
+  ```
 To enter the ODM environment again, repeat steps 7, 8 (but don't make the vodm_data directory a second time ;) Step 12 is all you need to do to run the software on another imagery dataset.
+
 ---
 
 Install MeshLab 1.3.3 or later on your Windows host. Then...
