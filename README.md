@@ -14,6 +14,7 @@ How to Install and Test
 6. Copy your cloned 'odm_vagrant' directory to c:\users\yourusername\Documents\odm\
 7. Launch GitHub Command Line (Start Menu->GitHub Inc->Git Shell)
 8. Navigate to the odm_vagrant directory and install the guest operating system ( commands in the boxes below should be typed into the command line ):
+
  ```
   cd c:\users\yourusername\Documents\odm\odm_vagrant\
   mkdir ..\vodm_data
@@ -23,13 +24,15 @@ How to Install and Test
 You have now installed, launched and logged in to an Ubuntu GNU/Linux OS on your Windows machine. The following commands are all standard Ubuntu GNU/Linux commands.
 
 9. Clone the sample imagery repository https://github.com/OpenDroneMap/odm_data.git
+
   ```
   sudo apt-get -y install git
   cd /vagrant_data/
   git clone https://github.com/OpenDroneMap/odm_data.git
   ```
 
-10. Clone the OpenDroneMap application repository  https://github.com/OpenDroneMap/OpenDroneMap.git 
+10. Clone the OpenDroneMap application repository  https://github.com/OpenDroneMap/OpenDroneMap.git
+
   ```
   sudo mkdir /odm_app
   sudo chown vagrant:vagrant /odm_app/
@@ -38,6 +41,7 @@ You have now installed, launched and logged in to an Ubuntu GNU/Linux OS on your
   ```
 
 11. Install the OpenDroneMap software:
+
   ```
   cd /odm_app/OpenDroneMap/
   ./install.sh
@@ -46,6 +50,7 @@ You have now installed, launched and logged in to an Ubuntu GNU/Linux OS on your
 Wait patiently, on a typical desktop machine ODM App installation will take about 20 minutes.
 
 12. Run the OpenDroneMap App on the an odm_data test dataset.
+
   ```
   cd /vagrant_data/odm_data/pacifica/
   /odm_app/OpenDroneMap/run.pl
@@ -58,10 +63,12 @@ Outputs will be in /vagrant_data/odm_data/pacifica/reconstruction-with-image-siz
 In your Windows host, these will be at c:\users\yourusername\Documents\odm\vodm_data\odm_data\pacifica\
 
 13. If you are done processing imagery datasets, you can logout and shutdown the virutal machine.
+
   ```
   sudo shutdown now
   ```
-To enter the ODM environment again, repeat steps 7, 8 (but don't make the vodm_data directory a second time ;) Step 12 is all you need to do to run the software on another imagery dataset.
+  
+To enter the ODM environment again, repeat steps 7, 8 (but don't make the vodm_data directory a second time) Step 12 is all you need to do to run the software on another imagery dataset.
 
 ---
 
