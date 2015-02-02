@@ -21,7 +21,7 @@ How to Install and Test
   vagrant up
   vagrant ssh
   ```
-In Windows you will have the vodm_data directory, in the GNU/Linux environment used below, that directory will be called vagrant_data<br>
+In Windows you will have the vodm_data directory you just created, in the GNU/Linux environment used below, that directory will be called vagrant_data, they are the same directory<br><br>
 You have now installed, launched and logged in to an Ubuntu GNU/Linux OS on your Windows machine. The following commands are all standard Ubuntu GNU/Linux commands.
 
 9. Clone the sample imagery repository https://github.com/OpenDroneMap/odm_data.git
