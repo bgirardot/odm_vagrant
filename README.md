@@ -54,8 +54,10 @@ Wait patiently, on a typical desktop machine ODM App installation will take abou
   cd /vagrant_data/odm_data/pacifica/
   /odm_app/OpenDroneMap/run.pl
   ```
-Wait patiently again, this will take about the same amount of time as the install proceedure.
-Outputs will be in /vagrant_data/odm_data/pacifica/reconstruction-with-image-size-1200 and /vagrant_data/odm_data/pacifica/reconstruction-with-image-size-1200-results
+Wait patiently again, this will take about the same amount of time as the install proceedure.<br>
+Outputs will be in /vagrant_data/odm_data/pacifica/reconstruction-with-image-size-1200<br>
+and<br>
+/vagrant_data/odm_data/pacifica/reconstruction-with-image-size-1200-results<br>
 In your Windows host, these will be at c:\users\yourusername\Documents\odm\vodm_data\odm_data\pacifica\
 
 13. If you are done processing imagery datasets, you can logout and shutdown the virutal machine.
