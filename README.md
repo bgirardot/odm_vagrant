@@ -15,7 +15,7 @@ How to Install and Test
 7. Launch GitHub Command Line (Start Menu->GitHub Inc->Git Shell)
 8. Navigate to the odm_vagrant directory and install the guest operating system ( commands in the boxes below should be typed into the command line ):
 
- ```
+  ```
   cd c:\users\yourusername\Documents\odm\odm_vagrant\
   mkdir ..\vodm_data
   vagrant up
