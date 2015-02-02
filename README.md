@@ -21,6 +21,7 @@ How to Install and Test
   vagrant up
   vagrant ssh
   ```
+In Windows you will have the vodm_data directory, in the GNU/Linux environment used below, that directory will be called vagrant_data<br>
 You have now installed, launched and logged in to an Ubuntu GNU/Linux OS on your Windows machine. The following commands are all standard Ubuntu GNU/Linux commands.
 
 9. Clone the sample imagery repository https://github.com/OpenDroneMap/odm_data.git
@@ -55,7 +56,8 @@ Wait patiently, on a typical desktop machine ODM App installation will take abou
   /odm_app/OpenDroneMap/run.pl
   ```
 Wait patiently again, this will take about the same amount of time as the install proceedure.<br>
-Outputs will be in /vagrant_data/odm_data/pacifica/reconstruction-with-image-size-1200<br>
+Outputs will be in:<br>
+/vagrant_data/odm_data/pacifica/reconstruction-with-image-size-1200<br>
 and<br>
 /vagrant_data/odm_data/pacifica/reconstruction-with-image-size-1200-results<br>
 In your Windows host, these will be at c:\users\yourusername\Documents\odm\vodm_data\odm_data\pacifica\
