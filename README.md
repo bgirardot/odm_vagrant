@@ -3,60 +3,65 @@ odm_vagrant
 
 Vagrant machine for using OpenDroneMap, meant primarily for Windows users who want to leverage ODM.
 
-How to use
-==========
+How to Install and Test
+========================
 
 1. Install VirtualBox ( http://virtualbox.org )
 2. Install Vagrant ( http://vagrantup.com )
-3. (For Windows and Mac) Install Github ( http://windows.github.com or http://mac.github.com )
-4. Use the github windows client to clone this odm_vagrant repository to your local machine
-5. Make an OpenDroneMap directory c:\users\yourusername\Documents\odm\
-6. Make a directory c:\users\yourusername\Documents\odm\vagrant_data
-7. Copy your cloned 'odm_vagrant' directory to c:\users\yourusername\Documents\odm\
-8. Launch GitHub Command Line (Start Menu->GitHub Inc->Git Shell)
- * Navigate to the odm_vagrant directory:
-
+3. Install Github for Windows or Mac OS ( http://windows.github.com or http://mac.github.com )
+4. Clone the odm_vagrant repository ( https://github.com/OpenDroneMap/odm_vagrant )to your local machine.
+5. Make a main install directory for the OpenDroneMap installation c:\users\yourusername\Documents\odm\
+6. Copy your cloned 'odm_vagrant' directory to c:\users\yourusername\Documents\odm\
+7. Launch GitHub Command Line (Start Menu->GitHub Inc->Git Shell)
+8. Navigate to the odm_vagrant directory and install the guest operating system ( commands in the boxes below should be typed into the command line ):
  ```
- cd c:\users\yourusername\Documents\odm\odm_vagrant\
- ```
- * Type the following in the command line
-
-  ```
+  cd c:\users\yourusername\Documents\odm\odm_vagrant\
   mkdir ..\vodm_data
   vagrant up
   vagrant ssh
   ```
+You have now installed, launched and logged in to an Ubuntu GNU/Linux OS on your Windows machine. The following commands are all standard Ubuntu GNU/Linux commands.
 
-7. Clone zip of https://github.com/OpenDroneMap/OpenDroneMap.git and https://github.com/OpenDroneMap/odm_data.git
-
+9. Clone the sample imagery repository https://github.com/OpenDroneMap/odm_data.git
   ```
+  sudo apt-get -y install git
   cd /vagrant_data/
-  sudo apt-get install git
-  git clone https://github.com/OpenDroneMap/OpenDroneMap.git
   git clone https://github.com/OpenDroneMap/odm_data.git
   ```
 
-8. Install:
-
+10. Clone the OpenDroneMap application repository  https://github.com/OpenDroneMap/OpenDroneMap.git 
   ```
-  cd /vagrant_data/OpenDroneMap
+  sudo mkdir /odm_app
+  sudo chown vagrant:vagrant /odm_app/
+  cd /odm_app/
+  git clone https://github.com/OpenDroneMap/OpenDroneMap.git
+  ```
+
+11. Install the OpenDroneMap software:
+  ```
+  cd /odm_app/OpenDroneMap/
   ./install.sh
   ```
 
-Wait patiently...
-Now let us run OpenDroneMap on our test dataset.
+Wait patiently, on a typical desktop machine ODM App installation will take about 20 minutes...
 
+12. Run the OpenDroneMap App on the an odm_data test dataset.
 ```
-cd /vagrant_data/odm_data/odm_data/
-/vagrant_data/OpenDroneMap/./run.pl
+cd /vagrant_data/odm_data/pacifica/
+/odm_app/OpenDroneMap/run.pl
 ```
 
-Wait patiently again...
+Wait patiently again, this will take about the same amount of time as the install proceedure...
 
-Outputs will be in /vagrant_data/odm_data/reconstruction-with-image-size-1200 and /vagrant_data/odm_data/reconstruction-with-image-size-1200-results .
+Outputs will be in /vagrant_data/odm_data/pacifica/reconstruction-with-image-size-1200 and /vagrant_data/odm_data/pacifica/reconstruction-with-image-size-1200-results
 
-In your Windows host, these will be at c:\users\yourusername\Documents\odm\vagrant_data\odm_data\reconstruction-with-image-size-1200
+In your Windows host, these will be at c:\users\yourusername\Documents\odm\vodm_data\odm_data\pacifica\
 
+13. If you are done processing imagery datasets, you can logout and shutdown the virutal machine.
+```
+sudo shutdown now
+```
+To enter the ODM environment again, repeat steps 7, 8 (but don't make the vodm_data directory a second time ;) Step 12 is all you need to do to run the software on another imagery dataset.
 ---
 
 Install MeshLab 1.3.3 or later on your Windows host. Then...
@@ -64,12 +69,12 @@ Install MeshLab 1.3.3 or later on your Windows host. Then...
 From Meshlab 1.3.3:
 
 	* Open Project file, navigate to:
-		* c:\users\yourusername\Documents\odm\vagrant_data\odm_data\reconstruction-with-image-size-1200\reconstruction-with-image-size-1200\bundle\bundle.out
+		* c:\users\yourusername\Documents\odm\vodm_data\odm_data\pacifica\reconstruction-with-image-size-1200\bundle\bundle.out
 	* It will prompt for the image list file
-		* c:\users\yourusername\Documents\odm\vagrant_data\odm_data\reconstruction-with-image-size-1200\reconstruction-with-image-size-1200\list.txt
+		* c:\users\yourusername\Documents\odm\vodm_data\odm_data\pacifica\reconstruction-with-image-size-1200\list.txt
 	* Control-L and delete "0 model"
 	* Import dense point cloud:
-		* e.g. c:\users\yourusername\Documents\odm\vagrant_data\odm_data\reconstruction-with-image-size-1200\reconstruction-with-image-size-1200-results\option-0000.ply
+		* e.g. c:\users\yourusername\Documents\odm\vodm_data\odm_data\pacifica\reconstruction-with-image-size-1200-results\option-0000.ply
 		* (there may be multiple ply files)
 	* Make a mesh:
 		* Filters:Remeshing, Simplification and Reconstruction:Surface Reconstruction Poisson
